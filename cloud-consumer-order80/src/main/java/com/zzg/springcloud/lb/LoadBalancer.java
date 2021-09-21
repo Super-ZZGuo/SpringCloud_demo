@@ -1,4 +1,4 @@
-package springcloud.lb;
+package com.zzg.springcloud.lb;
 
 import org.springframework.cloud.client.ServiceInstance;
 

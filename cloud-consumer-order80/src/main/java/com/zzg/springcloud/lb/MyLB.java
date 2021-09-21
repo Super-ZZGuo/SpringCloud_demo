@@ -1,4 +1,4 @@
-package springcloud.lb;
+package com.zzg.springcloud.lb;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.stereotype.Component;
@@ -20,7 +20,7 @@ public class MyLB implements LoadBalancer
 
         do {
             current = this.atomicInteger.get();
-            next = current >= 2147483647 ? 0 : current + 1;
+            next = current >= Integer.MAX_VALUE ? 0 : current + 1;
         }while(!this.atomicInteger.compareAndSet(current,next));
         System.out.println("*****第几次访问，次数next: "+next);
         return next;

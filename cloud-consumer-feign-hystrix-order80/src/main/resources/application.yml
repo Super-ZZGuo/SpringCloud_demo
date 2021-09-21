@@ -1,0 +1,13 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+#      注册中心单机环境
+      defaultZone: http://localhost:7001/eureka/
+
+feign:
+  hystrix:
+    enabled: true

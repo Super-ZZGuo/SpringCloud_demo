@@ -1,4 +1,4 @@
-package springcloud.controller;
+package com.zzg.springcloud.controller;
 
 import com.zzg.springcloud.entities.CommonResult;
 import com.zzg.springcloud.entities.Payment;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import springcloud.lb.LoadBalancer;
+import com.zzg.springcloud.lb.LoadBalancer;
 
 import javax.annotation.Resource;
 import java.net.URI;
