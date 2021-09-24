@@ -1,9 +1,6 @@
 import java.time.ZonedDateTime;
 
-/**
- * @auther zzyy
- * @create 2020-02-21 15:50
- */
+
 public class T2
 {
     public static void main(String[] args)

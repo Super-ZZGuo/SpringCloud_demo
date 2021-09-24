@@ -4,10 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-/**
- * @auther zzyy
- * @create 2020-02-21 20:04
- */
+
 @EnableEurekaClient
 @SpringBootApplication
 public class ConfigClientMain3366

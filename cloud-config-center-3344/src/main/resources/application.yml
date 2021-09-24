@@ -8,12 +8,15 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:zzyybs/springcloud-config.git #GitHub上面的git仓库名字
+          #使用ssh的git@github.com:Super-ZZGuo/springcloud-config.git地址报错权限不足，需要使用ssh连接github
+          #改为https的链接即可
+          uri: https://github.com/Super-ZZGuo/springcloud-config.git #GitHub上面的git仓库名字
+          default-label: main
         ####搜索目录
           search-paths:
             - springcloud-config
       ####读取分支
-      label: master
+      label: main
 #rabbitmq相关配置
 rabbitmq:
     host: localhost

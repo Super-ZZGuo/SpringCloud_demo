@@ -11,6 +11,8 @@
 
     <artifactId>cloud-provider-payment8002</artifactId>
 
+
+
     <dependencies>
         <!--eureka-client-->
         <dependency>
