@@ -1,4 +1,4 @@
-package com.atguigu.springcloud.alibaba;
+package com.zzg.springcloud.alibaba;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

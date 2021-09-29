@@ -1,10 +1,10 @@
-package com.atguigu.springcloud.alibaba.controller;
+package com.zzg.springcloud.alibaba.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.atguigu.springcloud.alibaba.myhandler.CustomerBlockHandler;
-import com.atguigu.springcloud.entities.CommonResult;
-import com.atguigu.springcloud.entities.Payment;
+import com.zzg.springcloud.alibaba.myhandler.CustomerBlockHandler;
+import com.zzg.springcloud.entities.CommonResult;
+import com.zzg.springcloud.entities.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class RateLimitController
 {
     @GetMapping("/byResource")
-    @SentinelResource(value = "byResource",blockHandler = "handleException")
+    @SentinelResource(value = "byResource"
+            ,blockHandler = "handleException")
     public CommonResult byResource()
     {
         return new CommonResult(200,"按资源名称限流测试OK",new Payment(2020L,"serial001"));
@@ -34,6 +35,7 @@ public class RateLimitController
     @GetMapping("/rateLimit/customerBlockHandler")
     @SentinelResource(value = "customerBlockHandler",
             blockHandlerClass = CustomerBlockHandler.class,
+            //指定通用配置类的handlerException2方法
             blockHandler = "handlerException2")
     public CommonResult customerBlockHandler()
     {
