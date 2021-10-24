@@ -1,6 +1,7 @@
 # SpringCloud
 
 这些练习是跟随B站尚硅谷的教学视频敲的练习代码
+> 视频链接：https://www.bilibili.com/video/BV18E411x7eT
 
 包括了**SpringCloud**和**SpringCloudAlibaba**的一些组件的使用
 
