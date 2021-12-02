@@ -18,5 +18,4 @@
 
 - `jmeter`：压力测试
 
-关于springcloud的完整项目可以查看仓库里的**Gmall**项目
 
